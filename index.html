@@ -358,12 +358,52 @@ details p { color:#cbd2ed; margin-bottom:0; }
   </section>
 
   <section class="page" id="page-patch">
-    <div class="page-head"><div class="kicker">PATCH NOTES</div><h2>🛠️ 패치노트</h2><p>차카데미의 업데이트 기록입니다.</p></div>
+    <div class="page-head"><div class="kicker">PATCH NOTES</div><h2>🛠️ 패치노트</h2><p>차카데미의 날짜별 업데이트 기록입니다. 날짜별로 새 기능, 변경 사항, 오류 수정을 확인하세요.</p></div>
     <div class="card">
-      <div class="table-wrap"><table><thead><tr><th>버전</th><th>내용</th></tr></thead><tbody>
-<tr><td><strong>1.0</strong></td><td>차카데미아에 새로운 입학생들이 들어옵니다.</td></tr>
-<tr><td><strong>1.1</strong></td><td>???</td></tr>
-</tbody></table></div>
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+        <span style="display:inline-block;padding:5px 11px;border:1px solid #625b8d;border-radius:999px;background:#30294b;color:#d8ceff;font-size:12px;font-weight:800">2026.10.28</span>
+        <h3 style="margin:0">✨ 10월 28일 업데이트 안내</h3>
+      </div>
+      <p class="muted">새로운 편의 기능과 스토리, 다양한 개선 사항이 추가되었습니다.</p>
+      <h3 class="section-title">🆕 새 기능</h3>
+      <ul class="clean">
+        <li><strong>지도 체크포인트:</strong> 지도(J)에서 Ctrl을 누른 채 클릭하거나 오른쪽 클릭하면 해당 위치에 이름을 붙여 체크포인트를 저장할 수 있습니다. 저장한 체크포인트를 같은 방법으로 누르면 삭제됩니다. 야생 지도 및 현재 접속한 서버의 지도에서만 만들 수 있습니다.</li>
+        <li><strong>지도 파티원 표시:</strong> 같은 서버에 있는 파티원의 위치가 지도에 파란 원과 이름으로 표시됩니다.</li>
+        <li><strong>땅 영역 표시:</strong> 내 땅 메뉴(H)의 ‘영역 표시’ 버튼을 켜면 땅문서를 들지 않아도 땅 경계가 계속 보입니다. <code>/땅보기</code> 명령어로도 켜고 끌 수 있습니다.</li>
+        <li><strong>낚싯대 수리:</strong> <code>/낚싯대수리</code> 명령어로 손에 든 낚싯대를 수리할 수 있습니다. 비용은 일반 1,000원, 고급 4,000원, 유일 20,000원, 전설 100,000원입니다.</li>
+        <li><strong>1장 추가 스토리:</strong> 하르바 교수 다음으로 세드릭 교수의 이야기가 이어집니다. 1:1 결투와 클래스 승급을 경험할 수 있습니다.</li>
+        <li><strong>2장 안내:</strong> 2장은 10월 29일 오후 6시에 열립니다.</li>
+      </ul>
+      <h3 class="section-title">🔧 변경 사항</h3>
+      <ul class="clean">
+        <li>왼쪽 아래 초상화 아래에 등급(I, II) 대신 레벨이 표시됩니다.</li>
+        <li>세드릭, 하르바, 베르나, 이솔데 교수와 그레고르 교감 선생님에게서도 ‘수업 받으러 왔어요’ 버튼으로 수업을 받을 수 있습니다.</li>
+        <li>인기도, 마법 발견 기록, NPC 호감도가 이제 모든 서버에서 동일하게 적용됩니다.</li>
+        <li>마일리지 상점에서 묶음으로 등록된 물건은 묶음 개수대로 구매됩니다.</li>
+        <li>텔레포트권으로 네더나 엔드에 있는 친구에게도 이동할 수 있습니다.</li>
+        <li>광맥 파쇄, 넓게 캐기로 광물을 캘 때도 경험치가 지급됩니다.</li>
+        <li>1:1 결투(아레나)에서는 체력이 자동으로 회복되지 않으며, 배고픔은 항상 가득 찬 상태로 유지됩니다.</li>
+        <li>포션을 다시 사용할 수 있을 때까지 남은 시간이 알림으로 표시됩니다.</li>
+        <li>야생 스폰 지점이 있는 청크는 땅으로 소유할 수 없습니다.</li>
+      </ul>
+      <h3 class="section-title">🐛 오류 수정</h3>
+      <ul class="clean">
+        <li>투사체 마법이 맞는 모습은 보이지만 피해가 들어가지 않던 문제를 수정했습니다.</li>
+        <li>멀리서 쏘거나 움직이면서 쏠 때 조준이 어긋나던 문제도 함께 수정했습니다.</li>
+        <li>내 정보(I)에서 지팡이의 지능이 실제보다 낮게 보이던 문제를 수정했습니다.</li>
+        <li>야생에서 공간 도약을 사용할 수 없던 문제를 수정했습니다.</li>
+        <li>낚시 화면에서 기본 낚싯줄 길이가 15m가 아닌 12.8m로 보이던 문제를 수정했습니다.</li>
+        <li>서버를 옮기면 지도에 그려진 기록이 사라지던 문제를 수정했습니다.</li>
+        <li>마나 포션이 재사용 대기 중에도 계속 마셔지던 문제를 수정했습니다.</li>
+        <li>스토리를 끝까지 진행했던 플레이어도 새로 추가된 단계부터 이어서 진행할 수 있습니다.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+        <span style="display:inline-block;padding:5px 11px;border:1px solid #454d6c;border-radius:999px;background:#171d30;color:#aeb7d5;font-size:12px;font-weight:800">2026.10.27</span>
+        <h3 style="margin:0">🏰 차카데미아 오픈</h3>
+      </div>
+      <p>차카데미아에 새로운 입학생들이 들어옵니다.</p>
     </div>
   </section>
   <div class="footer">✦ 차카데미 위키 · CHACADEMIA ✦<br>마법을 발견하고, 학교의 미래를 밝혀라.</div>
