@@ -362,6 +362,64 @@ details p { color:#cbd2ed; margin-bottom:0; }
     <div class="page-head"><div class="kicker">PATCH NOTES</div><h2>🛠️ 패치노트</h2><p>차카데미의 날짜별 업데이트 기록입니다. 날짜별로 새 기능, 변경 사항, 오류 수정을 확인하세요.</p></div>
     <div class="card">
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+        <span style="display:inline-block;padding:5px 11px;border:1px solid #625b8d;border-radius:999px;background:#30294b;color:#d8ceff;font-size:12px;font-weight:800">2026.10.30</span>
+        <h3 style="margin:0">✨ 10월 30일 패치 안내</h3>
+      </div>
+      <p class="muted">2장 스토리와 신규 콘텐츠가 추가되었으며, 마법·생활 시스템 및 각종 오류를 개선했습니다.</p>
+
+      <h3 class="section-title">🆕 새 콘텐츠</h3>
+      <ul class="clean">
+        <li><strong>2장 스토리:</strong> 2장 이야기가 추가됩니다. 2장 스토리는 오후 7시에 오픈됩니다.</li>
+        <li><strong>던전: 리치의 지하 연구실:</strong> 1인 던전이 추가됩니다. 2장 진행 중 입장할 수 있습니다.</li>
+        <li><strong>큐디치:</strong> 아레나 1 큐디치 경기장이 열립니다.</li>
+        <li><strong>펠릭스 장비 공방:</strong> 펠릭스에게 “장비 보러 왔어요” 대화가 추가되며, 장비 공방 상점이 열립니다.</li>
+        <li><strong>랭킹:</strong> <code>/랭킹 지능</code>, <code>/랭킹 인기도</code> 명령어가 추가됩니다.</li>
+      </ul>
+
+      <h3 class="section-title">🔧 변경 사항</h3>
+      <ul class="clean">
+        <li><strong>장신구:</strong> 장비창에서 장신구가 종이 모양으로 표시되던 문제가 수정됩니다.</li>
+        <li><strong>마법 피격:</strong> 마법 간 피격 쿨타임이 제거되어 연속으로 적중하는 마법이 모두 피해를 줍니다.</li>
+        <li><strong>연구일지:</strong> 연구일지가 없던 마법 84종에 연구일지가 추가됩니다.</li>
+        <li><strong>상점:</strong> 상점 상단의 ‘전체’ 탭이 삭제됩니다.</li>
+        <li><strong>낚시:</strong> 변경한 찌·줄·미끼를 장비 목록에서 기본 장비로 되돌릴 수 있습니다. 낚싯줄 설명은 실제로 내려가는 깊이로 표시됩니다.</li>
+        <li><strong>땅:</strong> 땅 허용 명단은 최대 5명까지 등록할 수 있습니다. (땅 주인 포함 총 6명)</li>
+        <li><strong>모닥불:</strong> 모닥불에 음식을 올릴 수 있습니다. 음식 외 아이템은 기존처럼 올릴 수 없습니다.</li>
+        <li><strong>잿불 덫:</strong> 동시에 설치할 수 있는 덫이 2개에서 1개로 변경됩니다.</li>
+        <li><strong>연금술:</strong> 연금술을 통해 새로운 아이템을 제작할 수 있습니다.</li>
+      </ul>
+
+      <h3 class="section-title">🛠️ 시스템 수정</h3>
+      <ul class="clean">
+        <li>접이식 망원경이 사용 키를 누르고 있는 동안 확대되도록 수정됩니다.</li>
+        <li>커스텀 몹이 썩은 살점을 떨어뜨리던 문제가 수정됩니다.</li>
+        <li>되심기 손길로 작물을 빠르게 캐면 다시 심어지지 않던 문제가 수정됩니다.</li>
+        <li>운명의 실 습득 조건이 올라가지 않던 문제가 수정됩니다.</li>
+        <li>콘크리트 양생 습득 조건이 올라가지 않던 문제가 수정됩니다.</li>
+        <li>하늘의 눈에 맞은 유저가 로비로 튕기던 문제가 수정됩니다.</li>
+      </ul>
+
+      <h3 class="section-title">✨ 마법 오류 수정</h3>
+      <ul class="clean">
+        <li><strong>미스틱 슈터 / 미라지 슈터:</strong> 슬롯에 등록하면 옆에 이펙트가 표시됩니다. 피해를 줄 때마다 화살이 대상에게 유도되어 날아가 추가 피해를 주며, 벽을 통과합니다. 화살 생성에는 0.5초의 내부 쿨타임이 적용됩니다.</li>
+        <li><strong>대상 지정 마법 전체:</strong> 커스텀 몹(모델이 있는 몹)을 대상으로 조준할 수 없던 문제가 수정됩니다.</li>
+        <li><strong>이펙트·피해 타이밍:</strong> 이펙트와 실제 피해가 들어가는 타이밍이 맞지 않던 마법 25종이 수정됩니다.</li>
+        <li><strong>이펙트 표시:</strong> 마법 발사 후 남아 있던 이펙트가 정상적으로 사라집니다.</li>
+      </ul>
+
+      <h3 class="section-title">🎯 사거리 · 적중 개선</h3>
+      <ul class="clean">
+        <li><strong>포효 도약 / 사냥 도약:</strong> 도약 거리가 늘어나 대상에게 닿도록 개선됩니다.</li>
+        <li><strong>반달 바람날:</strong> 사거리가 10칸에서 13칸으로 늘어나 이펙트와 일치합니다.</li>
+        <li><strong>퍼붓는 화살:</strong> 퍼지는 각도가 줄어 멀리서도 5발이 모두 적중합니다.</li>
+        <li><strong>여우불 공전:</strong> 유도 성능이 향상되어 가까이에서도 3발이 모두 적중합니다.</li>
+        <li><strong>되돌이 칼날:</strong> 돌아오는 칼날의 판정이 넓어져 한 번 더 적중시키기 쉬워집니다.</li>
+        <li><strong>섬광 도약:</strong> 점프하지 않고 땅에서 사용해도 앞으로 이동합니다.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
         <span style="display:inline-block;padding:5px 11px;border:1px solid #625b8d;border-radius:999px;background:#30294b;color:#d8ceff;font-size:12px;font-weight:800">2026.10.29</span>
         <h3 style="margin:0">🪄 10월 29일 패치 안내</h3>
       </div>
